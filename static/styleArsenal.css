@@ -1,0 +1,12 @@
+#arsenal {
+  color: white;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* else grind repeat will be in same line */
+  align-items: center;
+  height: 300px;
+  background: center / cover no-repeat url("/static/vandal.png");
+  background-color: black;
+}

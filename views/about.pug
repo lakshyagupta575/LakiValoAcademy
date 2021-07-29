@@ -1,0 +1,64 @@
+extends base.pug
+
+block scripts
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous")
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleAbout.css
+      link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+      
+block content     
+  section#about 
+        div#aboutBox
+          div#aboutHeader WHAT IS LV ACADEMY ALL ABOUT 
+          div.aboutInfo Every great competetive game requires an active community of coaches and that is why we built the perfect place for it.
+          div.aboutInfo Laki Valorant Academy is the place you are looking for to develop your gaming skillset and get the best of your form. 
+                      | Created with a vision to give rise to some of the best players, our sole motive is to offer the best facilities to 
+                      | the client, thereby helping them achieve their maximum potential in the field of gaming.
+          div.aboutInfo LVA is formed by a team of highly skilled and experienced players who have been champions during their times, 
+                      | and can help you become one with all their knowledge and experience. Whether you want to 
+                      | get better at the game or simply learn to enjoy the game, you will find it all here.
+
+          //- div.image2
+          //-           img(src="/static/aboutHeader2.png")
+  section#about2 
+        div#aboutBox2
+          div#aboutHeader2 WHAT ALL SERVICES DO WE PROVIDE 
+          div.aboutInfo2 With a team of over 20+ professional coaches, we strive to provide you our best facilities.
+          div.card2 
+            h3#service Personal Coaching
+            div.card-box
+                //- div.card-img
+                //-     img(src="/static/1.png")
+                div.card-content
+                    //- button(class="btn")
+                    //- | Submit
+                    p#services A proper one-to-one interaction will take place between the client and the trainer using the discord app
+                             |  wherein the trainer will personally provide guidance to the client and will also be open to solve all 
+                             |  of your quries regarding the game.
+                    div#buttons
+                        #back Back 
+                        #next Next
+
+  section#about3 
+        div#aboutBox3
+          div#aboutHeader3 HOW TO LEARN FROM OUR TRAINERS 
+          div.aboutInfo You can either join our Discord channel, where you can directly contact the moderators/coaches by pressing 
+                      | on the button below.
+          form(action="https://discord.gg/G9e64mNAPs",class="myForm")
+              button(class="btn2")
+                  |  JOIN OUR DISCORD
+          div.aboutInfo You can also fill the contact form and book a slot with the coach as per your convenience.
+          form(action="/contact",class="myForm")
+              button(class="btn3")
+                  |  BOOK MY SLOT
+          div.aboutInfo So what are you waiting for? Register, compete, and walk the path to VALORANT fame.
+          

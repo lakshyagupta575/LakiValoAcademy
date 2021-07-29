@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous")
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content     
+    section#introSection 
+        div  WELCOME TO LAKI'S VALORANT ACADEMY
+        div.small "GRIND SLEEP REPEAT"
+
+    section#missionSection 
+        h2 Our Agents
+        div.card 
+            h3 Jett
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    //- button(class="btn")
+                    //- | Submit
+                    p#quote1 "Not faster than me!"
+        div.card 
+            h3 Raze
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p#quote2 "Let's make some chaos"
+        div.card 
+            h3 Viper
+            div.card-box
+                div.card-img
+                    img(src="/static/Viper_icon.png")
+                div.card-content
+                    p#quote3 "Isolate and exterminate"
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/sponsor1.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor2.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor3.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor4.png", alt = "sponsor image", class = "spimages")

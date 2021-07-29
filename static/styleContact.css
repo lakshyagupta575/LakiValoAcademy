@@ -1,0 +1,62 @@
+* {
+  /* used so that empty spaces are cleaned */
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.myInput {
+  width: 40%;
+  padding: 9px;
+  margin: 8px;
+  font-size: 16px;
+  border: 2px solid #9d8e8e;
+  border-radius: 12px;
+  outline: none;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 2px solid #9d8383;
+  border-radius: 12px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  outline: none;
+  margin: 26px;
+}
+
+.container {
+  min-height: 70vh;
+  margin: 43px 0;
+}
+
+.container h1 {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 34px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  height: 70px;
+  color: white;
+  font-size: 20px;
+  font-family: "ZCOOL QingKe HuangYou";
+  padding-top: 20px;
+}

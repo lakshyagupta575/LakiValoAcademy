@@ -1,0 +1,15 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleSaved.css
+
+block content 
+    div.container
+        h1 Congratulations! 
+        h2 Your slot has been booked successfully.
+        h2 Our trainer will get in touch with you as soon as possible.

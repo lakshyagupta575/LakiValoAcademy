@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+* {
+  /* used so that empty spaces are cleaned */
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#navbar {
+  background-color: #d43b3b;
+  padding: 18px 14px;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+#navbar ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center; removed so that logo can be left */
+  align-items: center; /* vertical */
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#navbar li a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  padding: 13px 20px;
+}
+
+#navbar li a:hover {
+  color: black;
+}
+
+#introSection {
+  color: white;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* else grind repeat will be in same line */
+  align-items: center;
+  background: center / cover no-repeat url("/static/introBg.jpg");
+  height: 425px;
+  background-color: red;
+  padding-bottom: 40px; /* so that all is center */
+  -webkit-transition: background-image 0.4s ease-in-out;
+  transition: background-image 0.4s ease-in-out;
+}
+
+#sponsorSection {
+  height: 300px;
+  /* background-color: #c49c9cc7; */
+  background-color: #e0b49f;
+}
+
+#sponsorSection h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 12px;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+#footer {
+  height: 100px;
+  background-color: black;
+}
+
+#introSection div.small {
+  font-size: 45px;
+  padding: 5px;
+  font-style: italic;
+  /* font-family: Tungsten-Bold, arial, georgia, sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#missionSection {
+  height: 326px;
+  width: 67%;
+  margin: auto;
+}
+
+#missionSection h2 {
+  font-size: 36px;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.card {
+  display: inline-block; /* so that we can control height width of the cards */
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 29%;
+  margin: 23px 22px;
+  height: 209px;
+  background-color: #fff6f6;
+}
+
+.card h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0 12px;
+  margin-top: 24px;
+  font-weight: 900;
+}
+
+#logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 0 14px;
+  font-size: 28px;
+  margin-right: 40px;
+  position: absolute;
+  left: 15px;
+}
+
+#logo img {
+  height: 42px;
+  filter: invert(1);
+  position: relative;
+  right: 15px;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img {
+  height: 131px;
+  padding: 4px 14px;
+  margin: 5px 9px;
+}
+
+.card-img img {
+  height: inherit;
+}
+
+/*
+.card-content {
+  padding: 0 5px;
+} */
+
+.card-content p {
+  font-size: 19px;
+}
+
+#sponsors {
+  height: 191px;
+  max-width: 1000px;
+  margin: 27px auto;
+}
+
+.spimages {
+  height: 80%;
+  margin: 20px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: "ZCOOL QingKe HuangYou";
+  padding-top: 14px;
+}
+
+.btn {
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 2px solid #9d8383;
+  border-radius: 12px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  outline: none;
+  margin: 26px;
+}
+
+#quote1 {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: -5px;
+}
+
+#quote2 {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: -12px;
+}
+
+#quote3 {
+  /* font-family: "Black Han Sans", sans-serif; */
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: -8px;
+}

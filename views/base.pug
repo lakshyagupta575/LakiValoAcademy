@@ -1,0 +1,24 @@
+//- This is created for implementing template inheritance so that all pages have something common
+doctype html
+html
+  head
+    title Laki Valorant Academy 
+    block scripts 
+    block style 
+  body
+    nav#navbar 
+            ul  
+                div#logo
+                    img(src="/static/logo.png")
+                    | LVA
+                li #[a(href="/") Home]
+                li #[a(href="/about") About] 
+                li #[a(href="/agents") Agents] 
+                //- li #[a(href="/arsenal") Arsenal] 
+                li #[a(href="/contact") Contact Us]  
+                //- above code takes to contact pug on clicking contact on nav
+    block content
+    footer#footer 
+        | Copyright © 2021 Lakshya.com | All Rights Reserved 
+
+//- The above blocks such as scripts and content have been defined in home and other respective pugs

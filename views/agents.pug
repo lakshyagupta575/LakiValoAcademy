@@ -1,0 +1,80 @@
+extends base.pug
+
+block scripts
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous")
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleAgents.css
+      
+block content     
+    section#agents 
+        div MEET YOUR AGENTS
+    section#agentsSection 
+        div.agentNo1
+                div.agent-box
+                    div.agent-img1
+                        img(src="/static/cardjett.jpg")
+                    div.agent-content
+                        h2 Jett
+                        p Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
+                        //- img.agent1ability1(src="/static/jettc.png")
+                        div.ability1-box
+                            div#leftArrow1
+                            div#ability1Image
+                            div.abilityContent
+                                p#ability1Name
+                                p#ability1Info  
+                            div#rightArrow1
+                        //- img.agent1ability(src="/static/jettc.png")
+                        //- img.agent1ability(src="/static/jettq.png")
+                        //- img.agent1ability(src="/static/jette.png")
+                        //- img.agent1ability(src="/static/jettx.png")
+
+                        
+                        
+        br
+        div.agentNo2
+            div.agent-box
+                    div.agent-img2
+                        img(src="/static/cardraze.png")
+                    div.agent-content
+                        h2 Raze
+                        p Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”
+                        div.ability2-box
+                            div#leftArrow2
+                            div#ability2Image
+                            div.abilityContent
+                                p#ability2Name
+                                p#ability2Info  
+                            div#rightArrow2
+                        //- img.agent2ability(src="/static/razec.png")
+                        //- img.agent2ability(src="/static/razeq.png")
+                        //- img.agent2ability(src="/static/razee.png")
+                        //- img.agent2ability(src="/static/razex.png")
+        br
+        div.agentNo3
+            div.agent-box
+                    div.agent-img3
+                        img(src="/static/viper.jpg")
+                    div.agent-content
+                        h2 Viper
+                        p The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will. 
+                        div.ability3-box
+                            div#leftArrow3
+                            div#ability3Image
+                            div.abilityContent
+                                p#ability3Name
+                                p#ability3Info  
+                            div#rightArrow3
+                        //- img.agent3ability(src="/static/viperc.png")
+                        //- img.agent3ability(src="/static/viperq.png")
+                        //- img.agent3ability(src="/static/vipere.png")
+                        //- img.agent3ability(src="/static/viperx.png")    

@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul  
+            div#logo
+                img(src="/static/logo.png")
+                | TVA
+            li #[a(href="/") Home]
+            li #[a(href="/") About] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class Info] 
+            li #[a(href="/") Contact Us]  
+    
+    section#introSection 
+        div  Welcome to Laki's Valorant Academy 
+        div.small Grind Sleep Repeat
+
+    section#missionSection 
+        h2 Our Agents
+        div.card 
+            h3 Jett
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    p This is the best agent 
+        div.card 
+            h3 Raze
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This is the best agent 
+        div.card 
+            h3 Reyna 
+            div.card-box
+                div.card-img
+                    img(src="/static/3.png")
+                div.card-content
+                    p This is the best agent 
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/sponsor1.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor2.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor3.png", alt = "sponsor image", class = "spimages")
+            img(src="/static/sponsor4.png", alt = "sponsor image", class = "spimages")
+
+    footer#footer 
+        | Copyright © 2021 T3RROR.com | All Rights Reserved 
+    //- | is used because to cover the indentation else there will be error from pug
+
+    script
+      include ../static/index.js

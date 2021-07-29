@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
+#agents {
+  color: white;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  /* font-family: Tungsten-Bold,arial,georgia,sans-serif; */
+  font-size: 85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* else grind repeat will be in same line */
+  align-items: center;
+  height: 300px;
+  background: center / cover no-repeat url("/static/meetUrAgents1.png");
+  background-color: black;
+  /* padding-bottom: 40px; so that all is center */
+}
+
+#agentsSection {
+  height: 814px; /* 970 px for below */
+  width: 67%;
+  margin: auto;
+}
+
+.agent-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+.agentNo1 {
+  display: inline-block;  so that we can control height width of the cards 
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 160%;
+  margin: 23px -260px;
+  height: 270px;
+  background-color: white;
+} */
+
+.agentNo1 {
+  display: inline-block;
+  border: 2px solid white;
+  /* border-radius: 10px; */
+  width: 1528.5px;
+  margin: -3px -260px;
+  height: 275px;
+  background-color: black;
+}
+
+.agent-img1 {
+  height: 250px;
+  padding: 4px 14px;
+  margin: 5px 9px;
+}
+
+.agent-img1 img {
+  height: inherit;
+}
+
+.agentNo2 {
+  display: inline-block;
+  border: 2px solid white;
+  /* border-radius: 10px; */
+  width: 1528.5px;
+  margin: -3px -260px;
+  height: 275px;
+  background-color: black;
+}
+
+.agent-img2 {
+  height: 250px;
+  padding: 4px 14px;
+  margin: 5px 9px;
+}
+
+.agent-img2 img {
+  height: inherit;
+}
+
+.agentNo3 {
+  display: inline-block;
+  border: 2px solid white;
+  /* border-radius: 10px; */
+  width: 1528.5px;
+  margin: -3px -260px;
+  height: 275px;
+  background-color: black;
+}
+
+.agent-img3 {
+  height: 250px;
+  padding: 4px 14px;
+  margin: 5px 32px;
+}
+
+.agent-img3 img {
+  height: inherit;
+}
+
+.agent-content {
+  height: 237px;
+  position: absolute;
+  /* right: 0px; */
+  left: 450px;
+  width: 1050px;
+  /* border: 3px solid #73ad21; */
+  padding: 10px;
+  line-height: 1.4;
+}
+
+.agent-content p {
+  color: white;
+}
+
+.agent1ability {
+  height: 84px;
+  padding: 8px 32px;
+  margin: 19px 34px;
+}
+
+.agent2ability {
+  height: 84px;
+  padding: 8px 32px;
+  margin: 19px 34px;
+}
+
+.agent3ability {
+  height: 84px;
+  padding: 8px 32px;
+  margin: 19px 34px;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  margin: -10px -0px;
+  font-family: "STIX Two Math", serif;
+}
+
+p {
+  margin-top: 8px;
+}
+
+.agent1ability1 {
+  height: 134px;
+  margin: 11px;
+  margin-left: 50px;
+  background: url("/static/jettc.png");
+}
+
+#agent1abilities {
+  margin: 20px;
+  margin-left: 60px;
+  background: center / cover no-repeat url("/static/jettc.png");
+  height: 100px;
+  width: 200px;
+}
+
+/* .ability-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 135px;
+} */
+
+.ability1-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 135px;
+}
+
+#leftArrow1 {
+  background: center / cover no-repeat url("/static/leftArrow.png");
+  position: absolute; /* tesing */
+  height: 145px;
+  width: 50px;
+  left: 40px;
+  margin-top: 12px;
+}
+
+#hovered {
+  background: center / cover no-repeat url("/static/leftArrowHover.png");
+  position: absolute; /* tesing */
+  height: 145px;
+  width: 50px;
+  left: 40px;
+  margin-top: 12px;
+}
+
+#ability1Image {
+  position: absolute;
+  /* margin: 20px; */
+  margin-left: 70px;
+  background: center / cover no-repeat url("/static/jettc.png");
+  height: 100px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+p#ability1Name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-top: 45px;
+  left: 230px;
+  width: 700px;
+}
+
+p#ability1Info {
+  /* padding-bottom: 50px; */
+  margin-bottom: 40px;
+  position: relative;
+  left: 230px;
+  width: 700px;
+}
+
+#rightArrow1 {
+  background: center / cover no-repeat url("/static/rightArrow.png");
+  position: absolute;
+  height: 145px;
+  width: 50px;
+  right: 60px;
+  margin-top: 12px;
+}
+
+.ability2-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 135px;
+}
+
+#leftArrow2 {
+  background: center / cover no-repeat url("/static/leftArrow.png");
+  position: absolute; /* tesing */
+  height: 145px;
+  width: 50px;
+  left: 40px;
+  margin-top: 12px;
+}
+
+#ability2Image {
+  position: absolute;
+  /* margin: 20px; */
+  margin-left: 70px;
+  background: center / cover no-repeat url("/static/razec.png");
+  height: 100px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+p#ability2Name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-top: 45px;
+  left: 230px;
+  width: 700px;
+}
+
+p#ability2Info {
+  /* padding-bottom: 50px; */
+  margin-bottom: 40px;
+  position: relative;
+  left: 230px;
+  width: 700px;
+}
+
+#rightArrow2 {
+  background: center / cover no-repeat url("/static/rightArrow.png");
+  position: absolute;
+  height: 145px;
+  width: 50px;
+  right: 60px;
+  margin-top: 12px;
+}
+
+.ability3-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 135px;
+}
+
+#leftArrow3 {
+  background: center / cover no-repeat url("/static/leftArrow.png");
+  position: absolute; /* tesing */
+  height: 145px;
+  width: 50px;
+  left: 40px;
+  margin-top: 12px;
+}
+
+#ability3Image {
+  position: absolute;
+  /* margin: 20px; */
+  margin-left: 70px;
+  background: center / cover no-repeat url("/static/viperc.png");
+  height: 100px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+p#ability3Name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-top: 45px;
+  left: 230px;
+  width: 700px;
+}
+
+p#ability3Info {
+  /* padding-bottom: 50px; */
+  margin-bottom: 40px;
+  position: relative;
+  left: 230px;
+  width: 700px;
+}
+
+#rightArrow3 {
+  background: center / cover no-repeat url("/static/rightArrow.png");
+  position: absolute;
+  height: 145px;
+  width: 50px;
+  right: 60px;
+  margin-top: 12px;
+}
